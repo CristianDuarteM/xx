@@ -1,0 +1,14 @@
+<template>
+  <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 m-5">
+    <div class="col"repeat.for="c of col">
+      <div class="card" style="width: 18rem;">
+        <img src=${c.foto} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${c.nombre}</h5>
+          <a href=${c.linkedin} class="btn btn-primary">Linkedin</a>
+          <a href=${c.github} class="btn btn-primary">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
